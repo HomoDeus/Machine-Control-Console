@@ -21,3 +21,11 @@ INSTALLS += target
 
 ######################################################################
 ### qchart.js.pro ends here
+
+DISTFILES += \
+    QChart.js \
+    QChartGallery.js \
+    LICENSE.md \
+    README.md \
+    QChart.qml \
+    QChartGallery.qml

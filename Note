@@ -3,3 +3,6 @@
 1.如何在树莓派安装Qt5.8，PyQt 5.7。
 2.如何搭建树莓派的交叉编译环境。
 目前采用的办法是：在Github上找到了一个qchart.js的Project。这个采用Qt5.0做了一个QML。这就可以用于绘制Chart了。
+DONE BUild a QML UI that can visualize data.
+TODO Design the UI
+TODO Let the UI runs more smoothly
