@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
     QObject::connect(viewer.engine(), &QQmlEngine::quit, &viewer, &QWindow::close);
 
     viewer.setTitle(QStringLiteral("QML Axes"));
-    viewer.setSource(QUrl("qrc:/qml/main.qml"));
+    viewer.setSource(QUrl("qrc:/qml/QChartGallery.qml"));
     viewer.setResizeMode(QQuickView::SizeRootObjectToView);
     viewer.show();
 

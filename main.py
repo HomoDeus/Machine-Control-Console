@@ -10,6 +10,7 @@ class MyClass(QObject):
 
 if __name__ == '__main__':
     path = 'UIDesign/qml/QChartGallery.qml'   # 加载的QML文件
+    # path = 'UIDesign/qchart.js-master/QChartGallery.qml'
     app = QGuiApplication([])
     view = QQuickView()
     con = MyClass()
