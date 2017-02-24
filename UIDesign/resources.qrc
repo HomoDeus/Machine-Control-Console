@@ -5,5 +5,13 @@
         <file>qml/QChartGallery.js</file>
         <file>qml/QChartGallery.qml</file>
         <file>qml/qmldir</file>
+        <file>qml/Main.qml</file>
+        <file>qml/AndroidDelegate.qml</file>
+        <file>qml/ButtonPage.qml</file>
+        <file>qml/ListPage.qml</file>
+        <file>qml/ProgressBarPage.qml</file>
+        <file>qml/SliderPage.qml</file>
+        <file>qml/TabBarPage.qml</file>
+        <file>qml/TextInputPage.qml</file>
     </qresource>
 </RCC>
