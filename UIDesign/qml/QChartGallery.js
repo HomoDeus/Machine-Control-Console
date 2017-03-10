@@ -39,17 +39,57 @@ var ChartLineData = {
 
 var ChartPolarData = [{
     value: 0,
-    color: "#C7604C"//"#D97041"
+    color: "#C7604C"
  }, {
     value: 100,
     color: "#C7604C"
  }, {
-    value: 100,
+    value: 0,
     color: "#C7604C"//"#21323D"
  }, {
-    value: 100,
+    value: 0,
     color: "#C7604C"//"#9D9B7F"
- }]
+ }, {value: 100,
+  color: "#C7604C"//"#21323D"
+}, {
+  value: 0,
+  color: "#C7604C"//"#9D9B7F"
+},{
+  value: 0,
+  color: "#C7604C"
+},{
+  value: 100,
+  color: "#C7604C"
+},{
+  value: 0,
+  color: "#C7604C"//"#21323D"
+},{
+  value: 0,
+  color: "#C7604C"//"#9D9B7F"
+},{value: 100,
+color: "#C7604C"//"#21323D"
+},{
+value: 0,
+color: "#C7604C"//"#9D9B7F"
+},
+{
+  value: 0,
+  color: "#C7604C"
+},{
+  value: 100,
+  color: "#C7604C"
+},{
+  value: 0,
+  color: "#C7604C"//"#21323D"
+},{
+  value: 0,
+  color: "#C7604C"//"#9D9B7F"
+}, {value: 100,
+color: "#C7604C"//"#21323D"
+},{
+value: 0,
+color: "#C7604C"//"#9D9B7F"
+}]
 
 // /////////////////////////////////////////////////////////////////
 // Radar Chart Data Sample

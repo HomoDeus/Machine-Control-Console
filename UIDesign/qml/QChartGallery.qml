@@ -83,14 +83,37 @@ Rectangle {
       id: layoutSlider;
       columns: 2;
       Slider {
+          id: slider1
+          maximumValue: 50
+          minimumValue: 0
           anchors.margins: 20
           style: touchStyle
           value: 0.5
       }
       Slider {
+          id: slider2
+          maximumValue: 100
+          minimumValue: 50
           anchors.margins: 20
           style: touchStyle
           value: 0.5
+      }
+      Text {
+        width: 20
+        height: 20;
+        text: slider1.value.toFixed(2);
+        font.pointSize:20;
+
+        horizontalAlignment: Text.AlignLeft;
+        verticalAlignment: Text.AlignVCenter;
+      }
+      Text {
+        width: 20;
+        height: 20;
+        text: slider2.value.toFixed(2);
+        font.pointSize: 20;
+        horizontalAlignment: Text.AlignLeft;
+        verticalAlignment: Text.AlignVCenter;
       }
     }
     Component {
