@@ -15,7 +15,8 @@ if __name__ == '__main__':
     view = QQuickView()
     con = MyClass()
     context = view.rootContext()
-    context.setContextProperty("con", con)
+    context.setContextProperty("title", "MMC Monitor");
+    context.setContextProperty("speed",[10,10,10,10,5.6,5.5,4.0,6.5,5.9,9.0,8.1,5.6,5.5,4,6.5,5.9,9.0,8.1,5.6,5.5,4.0,6.5,5.9,9.0,8.1,5.6,5.5,4]);
     view.engine().quit.connect(app.quit)
     view.setSource(QUrl(path))
     view.show()

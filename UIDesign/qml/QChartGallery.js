@@ -23,7 +23,7 @@ var ChartLineData = {
              strokeColor: "rgba(220,220,220,1)",
               pointColor: "rgba(220,220,220,1)",
         pointStrokeColor: "#ffffff",
-                    data: [6.5,5.9,9.0,8.1,5.6,5.5,4.0,6.5,5.9,9.0,8.1,5.6,5.5,4,6.5,5.9,9.0,8.1,5.6,5.5,4.0,6.5,5.9,9.0,8.1,5.6,5.5,4]
+                    data: speed//[6.5,5.9,9.0,8.1,5.6,5.5,4.0,6.5,5.9,9.0,8.1,5.6,5.5,4,6.5,5.9,9.0,8.1,5.6,5.5,4.0,6.5,5.9,9.0,8.1,5.6,5.5,4]
     }, {
                fillColor: "rgba(151,187,205,0.5)",
              strokeColor: "rgba(151,187,205,1)",
@@ -36,59 +36,44 @@ var ChartLineData = {
 // /////////////////////////////////////////////////////////////////
 // Polar Chart Data Sample
 // /////////////////////////////////////////////////////////////////
-
+var backcolor="#bcbcc7"
 var ChartPolarData = [{
     value: 0,
-    color: "#C7604C"
- }, {
-    value: 100,
-    color: "#C7604C"
- }, {
-    value: 0,
-    color: "#C7604C"//"#21323D"
- }, {
-    value: 0,
-    color: "#C7604C"//"#9D9B7F"
- }, {value: 100,
-  color: "#C7604C"//"#21323D"
-}, {
-  value: 0,
-  color: "#C7604C"//"#9D9B7F"
-},{
-  value: 0,
-  color: "#C7604C"
-},{
-  value: 100,
-  color: "#C7604C"
-},{
-  value: 0,
-  color: "#C7604C"//"#21323D"
-},{
-  value: 0,
-  color: "#C7604C"//"#9D9B7F"
+    color: backcolor
 },{value: 100,
-color: "#C7604C"//"#21323D"
-},{
-value: 0,
-color: "#C7604C"//"#9D9B7F"
-},
-{
-  value: 0,
-  color: "#C7604C"
-},{
-  value: 100,
-  color: "#C7604C"
-},{
-  value: 0,
-  color: "#C7604C"//"#21323D"
-},{
-  value: 0,
-  color: "#C7604C"//"#9D9B7F"
-}, {value: 100,
-color: "#C7604C"//"#21323D"
-},{
-value: 0,
-color: "#C7604C"//"#9D9B7F"
+    color: backcolor
+},{value: 0,
+    color: backcolor
+},{value: 0,
+    color: backcolor
+},{value: 100,
+    color: backcolor
+},{value: 0,
+    color: backcolor
+},{value: 0,
+    color: backcolor
+},{value: 100,
+    color:backcolor
+},{value: 0,
+    color: backcolor
+},{value: 0,
+    color: backcolor
+},{value: 100,
+    color: backcolor
+},{value: 0,
+    color: backcolor
+},{value: 0,
+    color: backcolor
+},{value: 100,
+    color: backcolor
+},{value: 0,
+    color: backcolor
+},{value: 0,
+    color: backcolor
+},{value: 100,
+    color: backcolor
+},{value: 0,
+    color: backcolor
 }]
 
 // /////////////////////////////////////////////////////////////////

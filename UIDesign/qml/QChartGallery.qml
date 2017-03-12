@@ -45,17 +45,15 @@ Rectangle {
     width: parent.width;
     height: text_height;
 
-    text: "MMC Monitor";
+    text: title//setting in python.
     font.pointSize: 32;
 
     horizontalAlignment: Text.AlignHCenter;
     verticalAlignment: Text.AlignVCenter;
   }
-
 // /////////////////////////////////////////////////////////////////
 // Body
 // /////////////////////////////////////////////////////////////////
-
   Grid {
 
     id: layout;
@@ -68,7 +66,6 @@ Rectangle {
 
     columns: 1;
     spacing: row_height;
-
     Chart {
       id: chart_polar;
       width: target_length;
@@ -78,6 +75,34 @@ Rectangle {
       chartAnimationDuration: 2000;
       chartData: ChartsData.ChartPolarData;
       chartType: Charts.ChartType.POLAR;
+      Item {
+        rotation: 0
+        height: target_length
+        width: target_length
+        Canvas {
+          id: canvas
+          anchors.centerIn: parent
+          height: parent.height
+          width: parent.width
+          antialiasing: true
+          onPaint: {
+              var ctx = canvas.getContext('2d')
+              ctx.strokeStyle = "#ff0000"
+              ctx.lineWidth = 3
+              ctx.beginPath()
+              ctx.moveTo(0, 0)
+              ctx.lineTo(100, 0)
+              ctx.lineTo(100,100)
+              ctx.stroke()
+          }
+      }
+      /*Rectangle{
+                height: target_length
+        width: target_length
+        color: "#ff0000"
+        opacity: 0.2
+      }*/
+    }
     }
     Grid {
       id: layoutSlider;
