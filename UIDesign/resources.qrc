@@ -5,6 +5,5 @@
         <file>qml/QChartGallery.js</file>
         <file>qml/QChartGallery.qml</file>
         <file>qml/qmldir</file>
-        <file>qml/arrow.qml</file>
     </qresource>
 </RCC>

@@ -20,12 +20,17 @@ import "QChart.js"        as Charts
 import "QChartGallery.js" as ChartsData
 
 Rectangle {
+    function updateCanvas(){
+        canvas.requestPaint()
+    }
   property int target_length: 400;
   property int plot_height: 210;
   property int plot_width: 440;
   property int text_height: 80;
   property int row_height: 8;
   property int button_height: 10
+  property real dotradius:5
+  property real linewidth: 5
   color: "#ffffff";
   width: 480//2*row_height + target_length;
   height: 800//5*row_height + text_height + target_length + button_height + plot_height;
@@ -51,6 +56,7 @@ Rectangle {
     horizontalAlignment: Text.AlignHCenter;
     verticalAlignment: Text.AlignVCenter;
   }
+
 // /////////////////////////////////////////////////////////////////
 // Body
 // /////////////////////////////////////////////////////////////////
@@ -76,6 +82,7 @@ Rectangle {
       chartData: ChartsData.ChartPolarData;
       chartType: Charts.ChartType.POLAR;
       Item {
+        id: arrow
         rotation: 0
         height: target_length
         width: target_length
@@ -87,21 +94,24 @@ Rectangle {
           antialiasing: true
           onPaint: {
               var ctx = canvas.getContext('2d')
+              ctx.reset()
               ctx.strokeStyle = "#ff0000"
               ctx.lineWidth = 3
               ctx.beginPath()
-              ctx.moveTo(0, 0)
-              ctx.lineTo(100, 0)
-              ctx.lineTo(100,100)
+              ctx.moveTo(parent.height/2,parent.width/2)
+              ctx.lineTo(parent.height/2+target_x, parent.height/2+target_y)
               ctx.stroke()
           }
+          Rectangle{
+            x:parent.height/2+target_x-dotradius
+            y:parent.height/2+target_y-dotradius
+            height: dotradius*2
+            width:  dotradius*2
+            radius: dotradius
+            color:"#ff0000"
+          }
+
       }
-      /*Rectangle{
-                height: target_length
-        width: target_length
-        color: "#ff0000"
-        opacity: 0.2
-      }*/
     }
     }
     Grid {
