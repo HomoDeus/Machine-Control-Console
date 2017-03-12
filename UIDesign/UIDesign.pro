@@ -1,8 +1,8 @@
-QT += charts qml quick
+QT += qml quick
 QT += core gui widgets
 
 RESOURCES += resources.qrc
-SOURCES += testslide.cpp
+SOURCES += main.cpp
 DISTFILES += \
     QChart.js \
     QChartGallery.js \
