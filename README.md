@@ -15,6 +15,10 @@ TODO Let the UI runs more smoothly
 
 ## related package install
 sudo apt-get install qt5-default
+
 sudo apt-get install qt5*
+
 sudo apt-get install python-pyqt5*
+
 sudo apt-get install python3-pyqt5*
+
